@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name panda)(type KiCad)(uri "$(KIPRJMOD)/panda.pretty")(options "")(descr ""))
+)
