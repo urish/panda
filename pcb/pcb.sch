@@ -295,4 +295,6 @@ $EndComp
 Wire Wire Line
 	3350 2150 3350 2000
 Connection ~ 1750 2050
+Text GLabel 1300 2450 0    60   Input ~ 0
+TOUCH
 $EndSCHEMATC
