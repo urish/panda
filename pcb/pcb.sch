@@ -151,12 +151,12 @@ $EndComp
 $Comp
 L C C1
 U 1 1 598351C6
-P 1900 2650
-F 0 "C1" H 1925 2750 50  0000 L CNN
-F 1 "470nF" H 1925 2550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1938 2500 50  0001 C CNN
-F 3 "" H 1900 2650 50  0001 C CNN
-	1    1900 2650
+P 1900 2700
+F 0 "C1" H 1925 2800 50  0000 L CNN
+F 1 "470nF" H 1925 2600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1938 2550 50  0001 C CNN
+F 3 "" H 1900 2700 50  0001 C CNN
+	1    1900 2700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -251,15 +251,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 3650 3400 3650
 Wire Wire Line
-	1700 2550 1700 2900
-Wire Wire Line
 	2150 2650 2050 2650
-Wire Wire Line
-	1750 2650 1700 2650
-Connection ~ 1700 2750
-Wire Wire Line
-	2150 2550 1700 2550
-Connection ~ 1700 2650
 Wire Wire Line
 	1600 2450 2150 2450
 Wire Wire Line
@@ -268,7 +260,7 @@ Wire Wire Line
 	1750 2450 1750 2350
 Connection ~ 2050 2450
 Wire Wire Line
-	2050 2050 1600 2050
+	1600 2050 2050 2050
 Connection ~ 1750 2450
 Wire Wire Line
 	3200 2550 3500 2550
@@ -280,7 +272,7 @@ Wire Wire Line
 	1700 2900 2150 2900
 Connection ~ 1900 2900
 Wire Wire Line
-	3200 2450 3350 2450
+	3200 2450 3550 2450
 $Comp
 L GND #PWR08
 U 1 1 59835BEC
@@ -297,4 +289,17 @@ Wire Wire Line
 Connection ~ 1750 2050
 Text GLabel 1300 2450 0    60   Input ~ 0
 TOUCH
+Text GLabel 3550 2450 1    60   Input ~ 0
+VREGINT
+Connection ~ 3350 2450
+Text GLabel 2050 2550 0    60   Input ~ 0
+VREGINT
+Wire Wire Line
+	2150 2550 2050 2550
+Wire Wire Line
+	2050 2650 2050 2700
+Wire Wire Line
+	1750 2700 1700 2700
+Wire Wire Line
+	1700 2700 1700 2900
 $EndSCHEMATC
